@@ -38,6 +38,13 @@ python main.py <input image> <width> <height> <output file>
 
 ## Example output
 
+With the following command:  
+```powershell
+
+py .\main.py .\tajkep6.jpg 420 240 outtajkep.png
+
+```
+
 Original image:  
 ![](tajkep6.jpg)
 
