@@ -39,7 +39,7 @@ python main.py <input image> <width> <height> <output file>
 ## Example output
 
 Original image:  
-![](tajkep6.png)
+![](tajkep6.jpg)
 
 Generated image:  
 ![](outtajkep.png)
