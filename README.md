@@ -7,6 +7,17 @@ It also generates a text file describing which color should go in each spot. Thi
 
 In the output image each pixel represents a cubie on the cube.
 
+### Generated text file
+
+This file contains which colour should go in which spot.
+
+- O: Orange
+- R: Red
+- Y: Yellow
+- W: White
+- G: Green
+- B: Blue
+
 ### Note
 
 You have to set the colours in the script according to your Rubik's cube.  
