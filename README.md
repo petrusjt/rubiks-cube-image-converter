@@ -41,7 +41,7 @@ python main.py <input image> <width> <height> <output file>
 With the following command:  
 ```powershell
 
-python .\main.py .\tajkep6.jpg 420 240 outtajkep.png
+python main.py tajkep6.jpg 420 240 outtajkep.png
 
 ```
 
