@@ -20,13 +20,18 @@ colours = {
 
 colour_square_sums = {key : value[0]**2 + value[1]**2 + value[2]**2 for key, value in colours.items()}
 
-
 with Image.open(argv[1]) as img, open(argv[4].split(".")[0] + ".txt", "w") as file:
     img = img.resize((int(argv[2]), int(argv[3])))
     print(img.width, img.height)
-    for i in range(img.width):
-        for j in range(img.height):
-            r, g, b = img.getpixel((i, j))
+    for x in range(img.width):
+        if x % 3 == 0:
+            file.write("\n")
+
+        for y in range(img.height):
+            if y % 3 == 0:
+                file.write(" ")
+
+            r, g, b = img.getpixel((x, y))
             pixel_square_sum = r**2 + g**2 + b**2
 
             min = inf
@@ -36,10 +41,11 @@ with Image.open(argv[1]) as img, open(argv[4].split(".")[0] + ".txt", "w") as fi
                     min = abs(value - pixel_square_sum)
                     closest_item = key
             
-            img.putpixel((i,j), colours[closest_item])
+            img.putpixel((x,y), colours[closest_item])
             
             file.write(closest_item[0])
+            
         file.write("\n")
+        
             
     img.save(argv[4])
-    pass
